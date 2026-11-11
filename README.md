@@ -25,8 +25,8 @@ Cost matrix columns follow the order of the `demand` and
 `destination_budgets` vectors. The rows appear to be grouped by transport
 type, with one row per source in each group. Under this interpretation, use
 `matrix[t * m + i][j]` for transport type `t`, source `i`, and destination
-`j`, using zero-based indices. The row layout was inferred from matching
-variable-cost rows across instances 1–5, which align in groups of `m` rows.
+`j`, using zero-based indices. 
+
 The JSON files preserve the original row order. The supplied files label
 the transport vector only as `transport`; its exact model role and the
 units of the data are unspecified in those files.
